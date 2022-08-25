@@ -1,0 +1,716 @@
+/* * {
+  cursor: none;
+} */
+.root.jsx-1063984698 {
+  justify-content: center !important;
+}
+#parent {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+#cursor-ball {
+  z-index: 99999;
+  height: 40px;
+  width: 40px;
+  left: 200px;
+  position: absolute;
+  opacity: 1;
+  filter: blur(0.5px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+.firstpoll {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  animation-name: firstexample;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#secondpoll {
+  position: absolute;
+  border-radius: 50%;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.clickball {
+  position: absolute;
+  border-radius: 50%;
+  animation-name: exampleclick;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes firstexample {
+  0% {
+    border: 0px solid pink;
+    width: 0%;
+    height: 0%;
+  }
+
+  50% {
+    border: 5px solid orange;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    border: 0px solid blue;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes exampleclick {
+  0% {
+    border: 0px solid red;
+    width: 0%;
+    height: 0%;
+  }
+
+  50% {
+    border: 15px solid red;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    border: 0px solid red;
+    width: 200%;
+    height: 200%;
+  }
+}
+@keyframes example {
+  0% {
+    border: 5px solid green;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    border: 0px solid green;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#scroll {
+  background: pink;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  height: 100vh;
+}
+
+.firstpage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.firstpage .meImage {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.firstpage .titleName {
+  margin: 10px;
+  font-size: 3rem;
+  color: rgba(236, 236, 236, 0.726);
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.firstpage .titleTarget {
+  margin: 0px;
+  font-size: 1.5rem;
+  font-family: the unseen;
+  text-transform: capitalize;
+  color: rgba(255, 217, 0, 0.658);
+  font-weight: bold;
+}
+.firstpage .titleDesc {
+  margin: 0px;
+  font-size: 1rem;
+  width: 60%;
+  font-family: sans-serif;
+  color: cornsilk;
+  font-weight: bold;
+}
+
+.secondpage {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 350vh;
+  background-color: #fee;
+}
+
+.secondpage .seleft {
+  width: 40%;
+  height: 100%;
+}
+.secondpage .seright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-right: -10%;
+  height: 100%;
+  clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
+
+  background-color: green;
+}
+.secondpage .seright .normal {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.secondpage .seright .normal img {
+  position: absolute;
+  margin-left: -7rem;
+  margin-top: -2rem;
+}
+.secondpage .seright .normal h1 {
+  margin-top: 6rem;
+}
+
+.secondpage .seleft :first-child {
+  color: #222222;
+  font-size: 8rem;
+  margin-left: -15rem;
+  margin-top: 5rem;
+  font-family: "StephalliDemoRegular";
+  text-shadow: 5px 0px 10px #8b8a8a, 15px 0px 50px #8d8d8d;
+}
+.secondpage .seleft .react-text,
+.node-text {
+  color: #00ccff;
+  margin-top: -3rem;
+  margin-left: 10rem;
+  font-size: 5rem;
+  font-family: StephalliDemoRegular;
+  text-shadow: 5px 0px 10px #222222, 15px 0px 50px #222222;
+}
+.node-text {
+  margin-left: -20rem;
+  color: green;
+  font-size: 7rem;
+}
+
+/* my portfolio  */
+.about {
+  margin-top: 100vh;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 7;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about .aboutleft .name {
+  font-family: "Dirty Headline";
+  font-size: 4rem;
+}
+
+.box {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.first {
+  height: 100vh;
+  width: 100%;
+  background-image: url("http://yakraj.com/images/background.png");
+  display: flex;
+  flex-wrap: wrap;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+.second {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("http://yakraj.com/images/background.png");
+  flex-direction: column;
+  margin-top: -100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-size: cover;
+  background-blend-mode: overlay;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.box h4 {
+  font-family: The Frankline;
+  font-size: 4.5rem;
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.box .first h1 {
+  width: 40%;
+  text-align: right;
+}
+.box h1 {
+  font-family: The Frankline;
+  font-size: 8rem;
+  color: aqua;
+  text-shadow: 0px 0px 10px #000;
+  margin: 0px;
+}
+.box .second h1 {
+  text-align: left;
+  width: 40%;
+}
+.box .second h4 {
+  margin-right: 3rem;
+  text-align: right;
+}
+.box .first h4 {
+  margin-left: 3rem;
+  text-align: right;
+}
+.about .aboutleft .description {
+  font-family: "SCRIPTIN";
+  font-size: 2rem;
+}
+.about .aboutleft .details {
+  font-family: "PinyonScript";
+  font-size: 2rem;
+}
+.about .aboutright {
+  height: 100%;
+  width: 300%;
+  border: 1px solid #000;
+  border-radius: 50% 0% 0% 50%;
+
+  background-color: green;
+}
+
+/* ndoetree style starts from here */
+.nodeTree {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-attachment: fixed;
+}
+
+.nodeTree .nodeleft:first-child {
+  margin: 0px;
+  font-size: 2rem;
+  font-family: "ALBA";
+}
+.nodeTree .nodeleft .details {
+  font-size: 2rem;
+  width: 50%;
+  font-family: "the unseen";
+}
+.nodeTree .noderight {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nodeTree .noderight .nodeBox img {
+  -webkit-filter: drop-shadow(5px 3px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(6px 6px 2px rgba(12, 209, 22, 0.7));
+  border: 3px solid grey;
+  padding: 30px;
+}
+
+.nodeTree .noderight .nodeImage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  width: 150%;
+}
+.nodeTree .noderight .nodeImage div {
+  position: relative;
+  z-index: 6;
+  background: white;
+}
+.nodeTree .noderight .nodeImage:after {
+  content: "";
+  height: 250px;
+  z-index: 5;
+  margin-top: 85px;
+  margin-left: -330px;
+  width: 150px;
+  border-top: 8px solid grey;
+  border-left: 8px solid grey;
+  position: absolute;
+  padding: 5px;
+}
+.nodeTree .noderight .nodeImage:before {
+  content: "";
+  height: 250px;
+  z-index: 5;
+  margin-top: 85px;
+  margin-left: 370px;
+  width: 150px;
+  border-top: 8px solid grey;
+  border-right: 8px solid grey;
+  position: absolute;
+  padding: 5px;
+}
+.nodeTree .noderight .ball-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  transition: all 2s;
+  bottom: 0;
+  right: 10vw;
+  z-index: 6;
+  /* justify-content: space-between; */
+  margin-top: 90px;
+  /* width: 50%; */
+}
+.nodeTree .noderight .ball-container .ball-body {
+  -webkit-filter: drop-shadow(5px 3px 10px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(6px 6px 2px rgba(12, 209, 22, 0.7));
+  height: 200px;
+  /* width: 250px; */
+  /* border: 3px solid grey; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all 2s;
+  justify-content: center;
+}
+
+.react-ball,
+.react-native-ball {
+  transition: all 1s;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  cursor: grab;
+  height: 150px;
+  width: 150px;
+  padding: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-wrap: wrap;
+  background-color: #222222;
+  border-radius: 50%;
+  color: #00ccff;
+  display: flex;
+  flex-wrap: wrap;
+  text-shadow: 0px 0px 3px #8b9092, 0px 0px 2px #c8ebf5;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px #fff, inset 0px 0px 10px #fff,
+    inset 0px 0px 5px #51b3ce, inset 0px 0px 7px #51b3ce,
+    inset 0px 0px 9px #51b3ce;
+}
+
+.react-native-ball {
+  position: relative;
+  z-index: 6;
+}
+.react-ball {
+  position: relative;
+  z-index: 5;
+  transition: 0.3s;
+}
+.nodeTree .noderight .ball-container .firstBall {
+  animation-name: reactBall;
+  animation-duration: 6s;
+}
+.nodeTree .noderight .ball-container .secondBall {
+  animation-name: nativeBall;
+  animation-duration: 5s;
+}
+.nodeTree .noderight .ball-container .react-native-ball {
+  margin-left: -3rem;
+}
+
+@keyframes remove {
+  0% {
+    height: 120px;
+    width: 120px;
+  }
+  100% {
+    height: 0px;
+    width: 0px;
+  }
+}
+@keyframes nativeBall {
+  0% {
+    margin-right: 90vw;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes reactBall {
+  0% {
+    margin-right: 90vw;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+@keyframes Placing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* portfolio style starts here */
+.portfolio-container {
+  height: 300vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  flex-direction: column;
+}
+.portfolio-container .Pfirstpage {
+  position: fixed;
+  top: 0;
+  left: 50;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio-sub {
+  width: 50%;
+}
+.portfolio-sub p {
+  transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 769px) {
+  .box h1 {
+    font-size: 5rem;
+  }
+  .box h4 {
+    font-size: 3rem;
+  }
+  .box .first h1 {
+    width: 55%;
+  }
+  .box .second h1 {
+    width: 55%;
+  }
+  .secondPageleft {
+    display: none;
+  }
+  .secondpage .seright {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    clip-path: none;
+    background: #fff;
+  }
+  .normal {
+    clip-path: none !important;
+    position: absolute;
+    left: 0;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .titleName {
+    font-size: 1.3rem !important;
+  }
+
+  /* these are media for works */
+
+  .mywork-details-container {
+    width: 100% !important;
+  }
+
+  .mywork-title-container h1 {
+    font-size: 2rem !important;
+    text-shadow: 1px 1px #777777, 2px 2px rgba(255, 99, 71, 0.548) !important;
+  }
+  .mywork-title-container h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .right-side-image {
+    width: 100% !important;
+  }
+  .mywork-description {
+    padding: 0 !important;
+  }
+}
+
+/* landing new mobile apps and ads my work css */
+.portofolio-container {
+  background: linear-gradient(45deg, rgb(251, 221, 167), rgb(158, 255, 251));
+  background-attachment: fixed;
+}
+.mywork-container {
+  padding: 20px;
+  /* min-height: 100vh; */
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mywork-details-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mywork-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-direction: row; */
+}
+.mywork-title-container h3 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-family: The Frankline;
+}
+.mywork-title-container h1 {
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-family: StephalliDemoRegular;
+  font-family: StephalliDemoRegular;
+  text-shadow: 1px 1px #777777, 2px 2px rgba(255, 99, 71, 0.548),
+    3px 3px #fe490288, 4px 4px #fe490275, 5px 5px #fe4902, 6px 6px #fe4902;
+  transform: rotateX(-5deg) rotateY(-5deg);
+}
+.mywork-description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mywork-description {
+  padding: 10px;
+  width: 40%;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+.mywork-description p {
+  color: grey;
+  font-family: the unseen;
+  font-size: 1.5rem;
+}
+.mywork-features-container {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.mywork-features {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mywork-features img {
+  margin-right: 10px;
+}
+.mywork-features p {
+  margin: 0;
+  font-weight: bold;
+  color: grey;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.right-side-image {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.right-side-image div {
+  position: absolute;
+}
